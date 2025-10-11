@@ -443,4 +443,27 @@ body.light-mode .resume-cert-box p {
 .slider-buttons button:hover {
   background: #b00610;
 }
+#social-media {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#social-media h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 40px;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff4d5a; /* example hover color */
+}
 
