@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj K | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo"> MANOJ KONKAL</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume-certificates">Resume Section</a></li>
+        <li><a href="#standup">My Free Time Things</a></li>
+        <li><a href="#contact">Contact</a></li>      </ul>
+    </nav>
+    <button id="darkToggle">🌙</button>
+  </header>
+
+  <!-- Hero / Home Section -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <img src="images/profile/Dandiya.jpg" alt="Profile" class="hero-img">
+    <div class="hero-text">
+      <h2>Hey, I’m <span class="netflix-red">Manoj Konkal</span> </h2>
+      <p>
+        A passionate engineering student who loves blending <strong>technology</strong> and <strong>creativity</strong>.  
+        When I’m not building projects, I’m on stage performing <strong>stand-up comedy</strong> — turning code and college life into punchlines .
+      </p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title"> My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="openModal('project1')">
+        <img src="images/projects/Project1.png" alt="Project 1">
+        <h3>Movie Recommendation System</h3>
+      </div>
+      <div class="project-card" onclick="openModal('project2')">
+        <img src="images/projects/Screenshot 2025-06-07 160027.png" alt="Project 2">
+        <h3>PowerBI-Company-Performance-Dashboard</h3>
+      </div>
+    </div>
+ 
+<!-- Resume & Certificates Section -->
+<section id="resume-certificates">
+  <h2 class="section-title"> Resume &  Certificates</h2>
+  <div class="resume-cert-container">
+    <!-- Resume Box -->
+    <div class="resume-cert-box">
+      <h3>My Resume</h3>
+      <p>Click below to view or download my resume.</p>
+      <button class="btn" onclick="openModal('resumeModal')">View Resume</button>
+    </div>
+
+    <!-- Certificates Box -->
+    <div class="resume-cert-box">
+      <h3>My Certificates</h3>
+      <p>Click below to see all my certificates.</p>
+      <button class="btn" onclick="openModal('certificatesModal')">View Certificates</button>
+    </div>
+  </div>
+</section>
+
+<!-- Resume Modal -->
+<div class="modal" id="resumeModal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('resumeModal')">✖</button>
+    <h2>My Resume</h2>
+    <p>You can view or download my resume here:</p>
+    <a href="assets/resume/Manoj_Konkal_Resume_3rd _year.pdf" target="_blank" class="btn">View / Download Resume</a>
+  </div>
+</div>
+
+<!-- Certificates Modal -->
+<div class="modal" id="certificatesModal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('certificatesModal')">✖</button>
+    <h2>My Certificates</h2>
+    <div class="certificate-slider">
+      <img src="images/certificates/Screenshot 2024-08-01 184515.png" class="cert-slide active" alt="Certificate 1">
+      <img src="images/certificates/BIET.jpg" class="cert-slide" alt="Certificate 2">
+      <img src="images/certificates/Final GMU.jpg" class="cert-slide" alt="Certificate 3">
+      <!-- Add more certificates here -->
+    </div>
+    <div class="slider-buttons">
+      <button onclick="prevSlide()">❮</button>
+      <button onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Stand-Up Section -->
+  <section id="standup">
+    <h2 class="section-title"> My Free Time Moments </h2>
+    <div class="standup-grid">
+      <div class="standup-card" onclick="openModal('standup1')">
+        <img src="images/standup/Closeup.jpg" alt="Standup 1">
+        <h3>College Stage Performance</h3>
+      </div>
+      <div class="standup-card" onclick="openModal('standup2')">
+        <img src="images/standup/ACM.1.jpg" alt="Standup 2">
+        <h3>Collab with ACM</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title"> Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <!-- Resume Section -->
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed and Buily by The Great <strong>MANOJ KONKAL</strong> </p>
+  </footer>
+
+  <!-- Project & Stand-Up Modals -->
+  <div class="modal" id="project1">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal('project1')">✖</button>
+      <h2>Movie Recommendation System</h2>
+      <img src="images/projects/Project12.png" alt="Project 1">
+      <p>A machine learning-based recommendation system built using Python and KNN algorithm.</p>
+      <a href="https://github.com/ManojKonkal/Movie-Recommendation-System-using-KNN-Algorithm.git" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+  <div class="modal" id="project2">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal('project2')">✖</button>
+      <h2>PowerBI-Company-Performance-Dashboard</h2>
+      <img src="images/projects/Screenshot 2025-06-07 160058.png" alt="Project 2">
+      <p>PowerBI-Company-Performance-Dashboard</p>
+      <a href="https://github.com/ManojKonkal/PowerBI-Company-Performance-Dashboard.git" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+  <div class="modal" id="standup1">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal('standup1')">✖</button>
+      <h2>My Free Time</h2>
+      <img src="images/standup/From the audi.jpg" alt="Standup 1">
+      <img src="images/standup/WhatsApp Image 2025-09-09 at 15.34.33_526def8d.jpg" alt="Standup 1">
+      <img src="images/standup/WhatsApp Image 2025-09-09 at 15.34.33_680a877a.jpg" alt="Standup 1">
+     <img src="images/standup/WhatsApp Image 2025-09-09 at 15.34.34_9ee54279.jpg" alt="Standup 1">
+      <img src="images/standup/first day first show.jpg" alt="Standup 1">
+
+      <p>Performed live comedy during Freshers Orientation.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="standup2">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal('standup2')">✖</button>
+      <h2>Collab with ACM</h2>
+      <img src="images/standup/ACM.2.jpg" alt="Standup 2">
+      <p>In collabration with ACM performed Standup</p>
+    </div>
+  </div>
+</body>
+</html>
